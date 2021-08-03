@@ -60,7 +60,7 @@ def main():
         vk_audio_class = auth()
         track_list = vk_audio_class.get_iter(owner_id = input('Введите id пользователя: '))
 
-        n = input('\nВыберите режим скачивания: 1 - скачать всю библиотеку, 2 - скачать по названию ауодиозаписи\n> ')
+        n = input('\nВыберите режим скачивания: 1 - скачать всю библиотеку, 2 - скачать по названию аудиозаписи\n> ')
         if n == '1':
             download_all_tracks(track_list)
         elif n == '2':
