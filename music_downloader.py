@@ -9,7 +9,6 @@ from vk_api import audio
 PATH = os.path.normpath('music/')
 
 
-
 def auth():
     try:
         vk_session = vk_api.VkApi(login=input('Введите логин: '), password=input('Введите пароль: '))
@@ -50,7 +49,6 @@ def download_by_track_name(track_list):
             track_name = input('\nДля выхода из программы введите - <q>\nВведите название аудиозаписи: ')
 
 
-
 def main():
     try:
         if not os.path.exists(PATH):
@@ -71,7 +69,6 @@ def main():
         print('\nЗавершение работы.')
     except (AttributeError, NameError):
         print('\nВы ввели неверные данные.')
-
 
 
 if __name__ == '__main__':
